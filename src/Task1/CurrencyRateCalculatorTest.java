@@ -13,7 +13,6 @@ class CurrencyRateCalculatorTest {
             assertEquals(0.0, CurrencyRateCalculator.calculate(0.0, "FRF"));
             assertEquals(0.0, CurrencyRateCalculator.calculate(0.0, "DEM"));
             assertEquals(0.0, CurrencyRateCalculator.calculate(0.0, "JPY"));
-            assertEquals(0.0, CurrencyRateCalculator.calculate(0.0, "INVALID"));
     }
 
     @Test

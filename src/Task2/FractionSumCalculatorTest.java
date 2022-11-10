@@ -66,4 +66,24 @@ class FractionSumCalculatorTest {
         assertEquals(expected, actual);
     }
 
+    //add negative fractions
+    @Test
+    void addFractionOneOverTwoPlusNegativeOneOverTwo() {
+        FractionSumCalculator calculator = new FractionSumCalculator();
+        Fraction a = new Fraction(1, 2);
+        Fraction b = new Fraction(-1, 2);
+        Fraction expected = new Fraction(0,4);
+        Fraction actual = calculator.addFraction(a, b);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void addFractionOneOverTwoPlusNegativeOneOverFour() {
+        FractionSumCalculator calculator = new FractionSumCalculator();
+        Fraction a = new Fraction(1, 2);
+        Fraction b = new Fraction(-1, 4);
+        Fraction expected = new Fraction(2, 8);
+        Fraction actual = calculator.addFraction(a, b);
+        assertEquals(expected, actual);
+    }
 }
